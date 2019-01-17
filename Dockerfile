@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM balenalib/rpi-raspbian
 MAINTAINER muallin@gmail.com
 
 WORKDIR /src
