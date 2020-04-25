@@ -8,7 +8,7 @@ WORKDIR git
 RUN apt-get update && \
     apt-get -y install git qt5-default libpoppler-qt5-dev libpoppler-qt5-1 wget unzip libqt5sql5-sqlite libqt5sql5 sqlite3 libqt5network5 libqt5gui5 libqt5core5a build-essential qt5-qmake desktop-file-utils qtbase5-dev qtmultimedia5-dev libpoppler-qt5-dev qtscript5-dev libqt5opengl5-dev libglu1-mesa-dev qtdeclarative5-dev make g++ mercurial
 RUN git clone https://github.com/YACReader/yacreader.git . && \
-    git checkout 9.6.2
+    git checkout master
 RUN cd compressed_archive/unarr/ && \
     wget github.com/selmf/unarr/archive/master.zip &&\
     unzip master.zip  &&\
